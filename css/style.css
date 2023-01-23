@@ -42,10 +42,13 @@ body{
   }
   
   .nav {
+    
+    padding-left: 50px;
+  }
+  .nav_inner {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 50px;
   }
   .logo {
     padding-right: 40px;
@@ -66,5 +69,19 @@ body{
     font-size: 64px;
     line-height: 78px;
     position: absolute;
-    top: 190px;
+    top: 266px;
+
+  
+  }
+
+  .img-orange {
+    position: absolute;
+    top: 310px;
+  }
+  .headline_text {
+    line-height: 22px;
+    min-width: 500px;
+    position: absolute;
+    top: 466px;
+    left: 0;
   }
