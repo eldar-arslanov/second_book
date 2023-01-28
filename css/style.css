@@ -73,6 +73,9 @@ body {
     margin-top: 180px;
     padding-left: 30px;
   }
+  .headline {
+    padding-bottom: 170px;
+  }
   
   .headline_title {
     font-weight: 400;
@@ -111,6 +114,7 @@ body {
     padding: 15px 46px;
   }
   .headline_btn {
+    
   }
   .btn_orange {
   }
@@ -165,4 +169,36 @@ body {
     
 
   }
- 
+ /* -----finish headline_block */
+
+ .info {
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_list {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info_list img {
+  padding-bottom: 20px;
+  a
+}
+.info_list h3 {
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 30px;
+}
+.info_list p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
