@@ -172,6 +172,7 @@ body {
  /* -----finish headline_block */
 
  .info {
+  padding-bottom: 90px;
 }
 
 .info-block {
@@ -201,4 +202,28 @@ body {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+}
+
+/* ----section work started---- */
+.work {
+}
+.container {
+}
+.work_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.work_img {
+}
+.work_info {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-left: 50px;
+}
+
+.work_title {
+  font-size: 48px;
+  line-height: 58px;
+  padding-bottom: 45px;
 }
