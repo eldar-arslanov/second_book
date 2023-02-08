@@ -21,20 +21,20 @@
                 <header class="header">
                         <nav class="nav">
                                 <!-- <div class="nav_inner"> -->
-                                <a class="logo" href="#">
+                                <a class="header__logo logo" href="#">
                                     <img src="images/logo.svg" alt="second book" class="logo_img">
                                 </a>
                                 <ul class="menu">
-                                    <li class="menu__item">Главная</li>
-                                    <li class="menu__item">Поддержать</li>
-                                    <li class="menu__item">Блог</li>
-                                    <li class="menu__item">Контакты</li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Поддержать</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                                 </ul>
                                 <!-- </div>     -->
                         </nav>
                 </header>
 
-                        <!-- -----start main block-----------  -->
+                        <!-- -----start headline block-----------  -->
                 <main class="main">
                             <section class="headline">
                                 <div class="headline__block">
@@ -43,63 +43,120 @@
                                     Вы можете передать их в благотворительный фонд.</p>
                                 </div>
                                 <div class="headline__btn-group">
-                                    <a href="#" class="headline__btn btn btn--primary">Передать книги</a>
-                                     <a href="#" class="headline__btn btn btn--icon">Подробнее</a> 
+                                    <a href="#" class="headline__btn btn">Передать книги</a>
+                                     <a href="#" class="headline__btn btn headline_btn__icon">Подробнее</a> 
                                    
                                     
-                                    <div class="headline__info ">
-                                        <span class="info__title">155 785</span>
-                                        <span class="info__title info__title--text">книг переработано</span>
+                                    <div class="headline__count ">
+                                        <span class="headline__count-title">155 785</span>
+                                        <span class="headline__count-title headline__count-text">книг переработано</span>
                                     </div>
                                 </div>
                             </section>
 
                         <!-- ------------section info started-------- -->
                     <section class="info"> 
-                        <div class="container">
-                            <div class="info-block">
-                                <ul class="info_list">
-                                    <li><img src="images/tree.svg" alt=""></li>
-                                    <li><h3>Спасём деревья</h3></li>
-                                    <li><p>Прекратим вырубку леса и посадим новые деревья с www.trees.org.
+                            <ul class="info__list">
+                                <li class="info__item">
+                                    <img src="images/tree.svg" alt="tree" class="info__img">
+                                    <h3 class="info__title info__title--trees">Спасём деревья</h3>
+                                    <p class="info__text">Прекратим вырубку леса и посадим новые деревья с www.trees.org.
                                         Поддержим программу высадки специальных видов быстрорастущих деревьев.
-                                    </p></li>
-                                </ul>
-                                <ul class="info_list">
-                                    <li><img class="info_img" src="images/book.svg" alt=""></li>
-                                    <li><h3>Образование</h3></li>
-                                    <li><p>Поддержим школы вместе с www.donorschoose.org.
-                                        DonorsChoose помогают учебным заведениям в приобретении 
+                                    </p>
+                                </li>
+                                <li class="info__item">
+                                    <img src="images/book.svg" alt="tree" class="info__img">
+                                    <h3 class="info__title info__title--book">Образование</h3>
+                                    <p class="info__text">Поддержим школы вместе с www.donorschoose.org.
+                                        DonorsChoose помогают учебным заведениям в приобретении
                                         необходимых материалов.
-                                    </p></li>
-                                </ul>
-                                <ul class="info_list">
-                                    <li><img class="info_img" src="images/africa.svg" alt=""></li>
-                                    <li><h3>Благотворительность</h3></li>
-                                    <li><p>Пересылаем книги в Африку с www.betterworldbooks.com.
-                                        Мы отправляем большую часть книг в Кению и Нигерию
+                                    </p>
+                                </li>
+                                <li class="info__item">
+                                    <img src="images/africa.svg" alt="tree" class="info__img">
+                                    <h3 class="info__title info__title--africa">Благотворительность</h3>
+                                    <p class="info__text">Пересылаем книги в Африку с www.betterworldbooks.com.
+                                        <br>Мы отправляем большую часть книг в Кению и Нигерию
                                         при поддержке фонда Better World Books.
-                                    </p></li>
-                                </ul>
-                            </div>
-                        </div>
+                                    </p>
+                                </li>
+                            </ul>
                     </section>
 
-                    <!-- ------------section work started-------- -->
+                    <!-- ------------section work starting-------- -->
                     <section class="work">
                         <div class="container">
-                            <div class="work_inner">
+                            <div class="work__inner">
                                 <img src="images/work.png" alt="" class="work_img">
-                                <div class="work_info">
-                                    <h2 class="work_title">Как это работает?</h2>
-                                    <p><img class="work_img" src="images/tree.svg" width="43px" height="51px" hspace="20" alt="tree"> Вы отдаёте 1 коробку книг = мы сажаем 10 деревьев</p>
-                                    <p><img src="images/book.svg" width="43px" height="51px" alt="plant">Вы отдаёте 1 коробку книг = мы финансируем образовательный проектв</p>
-                                    <p>Если в вашем городе нет отделения нашего фонда и вы отправляете книги транспортной компанией, мы компенсируем оплату перевозки по тарифу до 10кг. </p>
+                                <div class="work__info">
+                                    <h2 class="work__title">Как это работает?</h2>
+                                    <p class="work__text work__text_img-tree">Вы отдаёте 1 коробку книг <br>= мы сажаем 10 деревьев</p>
+                                    <p class="work__text work__text_img-book">Вы отдаёте 1 коробку книг <br>= мы финансируем образовательный проектв</p>
+                                    <p class="work__text work__text_info">Если в вашем городе нет отделения нашего фонда и вы отправляете книги транспортной компанией, мы компенсируем оплату перевозки по тарифу до 10кг. </p>
 
                                 </div>
                             </div>
                     </section>
-                            
+
+                    <!-- ------------section work mission-------- -->
+                    <section class="mission">
+                        <div class="mission__block-text">
+                            <h2 class="mission__title">Наша миссия на 2023 год</h2>
+                            <p class="mission__text">
+                                Наша основная цель: спасти и посадить столько деревьев, сколько сможем и в то же время помочь каждому, кто хочет передать ненужные книги с пользой.
+                                Пожертвование книг дарит им вторую жизнь, даёт другим возможность наслаждаться их чтением.  Это также позитивно влияет на окружающую среду, поскольку переаботка книг спасает от вырубки леса.
+                            </p>
+                        </div>
+                        <div class="mission__block-numbers">
+                            <igm class="mission__igm" src="images/diagram.png" ></igm>
+                        </div>
+                    </section>
+
+                    <!-- ------------section partners-------- -->
+                    <section class="partners">
+                        <div class="partners__line line"></div>
+                        <h2 class="partners__title">Наши партнёры</h2>
+                        <div class="partners__block">
+                            <img class="partners__img" src="images/trees-logo 1.svg" alt="partner" ></img>
+                            <img class="partners__img" src="images/bwb-logo.svg" alt="partner" ></img>
+                            <img class="partners__img"partners__igm_orange" src="images/bookstore-logo.svg" alt="partner"></img>
+                            <img class="parters__img"src="images/donors-logo.svg" alt="partner" ></img>
+                        </div>
+                    </section>
+
+                    <!-- --------section form-------- -->
+                    <section class="form">
+                            <img src="images/form-img.png" alt="form" class="form__img">
+                            <div class="form__inner">
+                                <h2 class="form__title">Как стать участником акции?</h2>
+                                <p class="form__text">Пожалуйста заполните форму для того, чтобы оформить отгрузку книг. Мы также принимаем пожертвования от школ и ВУЗов. Если в Вашем городе нет отделения нашего фонда, пожалуйста, воспользуйтесь услугами транспортной компании. 
+                                </p>
+                                <a href="#" class="form__button">Оформить отгрузку</a>
+                            </div>
+                    </section>
+                        
+                    <footer class="footer">
+                        <div class="footer__contacts">
+                            <div class="footer__phone-block">
+                                <p class="footer__text">Позвоните нам, если остались вопросы</p>
+                                <a class="footer__phone" href="tel:+79999999999">+7 999 999 99 99</a>
+                            </div>
+                            <div class="footer__social">
+                                <p class="footer__text">Мы в соцсетях</p>
+                                <div class="footer__logo-social">
+                                    <a href="" class="footer__link-logo"><img src="images/google-logo.svg" alt="google" class="footer__img-social"></a>
+                                    <a href="" class="footer__link-logo"><img src="images/google-logo.svg" alt="google" class="footer__img-social"></a>
+                                    <a href="" class="footer__link-logo"><img src="images/google-logo.svg" alt="google" class="footer__img-social"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__line line"></div>
+                        <div class="footer__rights">
+                            <a href="#" class="footer__logo logo"><img src="images/secondbook.png" alt="secondbook" class="footer__rights_logo-img"></a>
+                            <a href="" class="footer__rights_rights">© 2022 Second Book. Все права защищены.</a>
+                        </div>
+                    </footer>
     </div>
 </body>
 </html>
