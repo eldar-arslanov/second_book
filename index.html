@@ -14,11 +14,9 @@
     <title>Second Book</title>
 </head>
 <body>
-    <div class="container">
-        
-
             <!-- -------start header-----------  -->
                 <header class="header">
+                    <div class="header__container">
                         <nav class="nav">
                                 <!-- <div class="nav_inner"> -->
                                 <a class="header__logo logo" href="#">
@@ -32,7 +30,9 @@
                                 </ul>
                                 <!-- </div>     -->
                         </nav>
+                    </div>
                 </header>
+                <div class="container">
 
                         <!-- -----start headline block-----------  -->
                 <main class="main">
@@ -58,23 +58,23 @@
                     <section class="info"> 
                             <ul class="info__list">
                                 <li class="info__item">
-                                    <img src="images/tree.svg" alt="tree" class="info__img">
-                                    <h3 class="info__title info__title--trees">Спасём деревья</h3>
+                                    <!-- <img src="images/tree.svg" alt="tree" class="info__img"> -->
+                                    <h3 class="info__title info__title_trees">Спасём деревья</h3>
                                     <p class="info__text">Прекратим вырубку леса и посадим новые деревья с www.trees.org.
                                         Поддержим программу высадки специальных видов быстрорастущих деревьев.
                                     </p>
                                 </li>
                                 <li class="info__item">
-                                    <img src="images/book.svg" alt="tree" class="info__img">
-                                    <h3 class="info__title info__title--book">Образование</h3>
+                                    <!-- <img src="images/book.svg" alt="tree" class="info__img"> -->
+                                    <h3 class="info__title info__title_book">Образование</h3>
                                     <p class="info__text">Поддержим школы вместе с www.donorschoose.org.
                                         DonorsChoose помогают учебным заведениям в приобретении
                                         необходимых материалов.
                                     </p>
                                 </li>
                                 <li class="info__item">
-                                    <img src="images/africa.svg" alt="tree" class="info__img">
-                                    <h3 class="info__title info__title--africa">Благотворительность</h3>
+                                    <!-- <img src="images/africa.svg" alt="tree" class="info__img"> -->
+                                    <h3 class="info__title info__title_africa">Благотворительность</h3>
                                     <p class="info__text">Пересылаем книги в Африку с www.betterworldbooks.com.
                                         <br>Мы отправляем большую часть книг в Кению и Нигерию
                                         при поддержке фонда Better World Books.
@@ -87,7 +87,7 @@
                     <section class="work">
                         <div class="container">
                             <div class="work__inner">
-                                <img src="images/work.png" alt="" class="work_img">
+                                <img src="images/work.png" alt="" class="work__img">
                                 <div class="work__info">
                                     <h2 class="work__title">Как это работает?</h2>
                                     <p class="work__text work__text_img-tree">Вы отдаёте 1 коробку книг <br>= мы сажаем 10 деревьев</p>
@@ -108,7 +108,9 @@
                             </p>
                         </div>
                         <div class="mission__block-numbers">
-                            <igm class="mission__igm" src="images/diagram.png" ></igm>
+                            <div class="mission__row mission__row_green"><span class="mission__row_big-text">1 млн</span><br>деревьев посажено<span class="mission__row_persents"></span></div>
+                            <div class="mission__row mission__row_yellow"><span class="mission__row_big-text">1 млн</span><br>книг отправлено в Африку</div>
+                            <div class="mission__row mission__row_blue"><span class="mission__row_big-text">$ 250000</span><br>пожертвовано на  поддержку образовательных  проектов</div>
                         </div>
                     </section>
 

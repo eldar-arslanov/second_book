@@ -4,10 +4,9 @@ body {
     font-family:  'Montserrat', sans-serif;
     font-size: 100%;
     background: url("../images/main.png") no-repeat 50% 0;
-    /* background-repeat: no-repeat;
-    background-position: top center; */
-    
-}
+    overflow-x: hidden;
+  }
+
 
 
 
@@ -17,12 +16,14 @@ body {
     margin: 0 auto;
     padding: 0px 15px;
     height: inherit;
-  }
+    /* overflow-x: hidden; */
+}
 
   /* ------header_start------------- */
   .background {
     min-width: 100%;
     min-height: 100vh;
+    
 
     
   }
@@ -34,6 +35,7 @@ body {
     color: #1C1D23;
 
     width: 100%;
+    margin: 0 auto;
     min-width: 1920px;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -43,13 +45,18 @@ body {
     
     
 
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
   }
+  .header__container {
+    max-width: 1200px;
+    padding-left: 150px;
+
+  }
   
   .nav {
-    
+
     padding-left: 50px;
   
     display: flex;
@@ -77,7 +84,7 @@ body {
     margin-top: 180px;
   }
   .headline {
-    padding-bottom: 170px;
+    padding-bottom: 270px;
   }
   
   .headline__title {
@@ -110,6 +117,7 @@ body {
   
   .headline__btn-group {
     display: flex;
+    flex-wrap: wrap;
     
     
   }
@@ -203,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 30px;
  }
  .info__img {
   /* margin-bottom: 20px; */
@@ -211,15 +220,47 @@ body {
   font-size: 36px;
   line-height: 44px;
   padding-bottom: 30px;
+  white-space: nowrap;
 }
-.info__title--trees {
-  padding-top: 20px ;
+.info__title_trees {
+  position: relative;
+  
 }
-.info__title--book {
-  padding-top: 9px
+.info__title_trees::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/tree.svg) no-repeat;
+  width: 69px;
+  height: 83px;
+  position: absolute;
+  top: -100px;
+  left: 117px;
 }
-.info__title--africa {
-  padding-top: 20px
+.info__title_book {
+  position: relative;
+}
+.info__title_book::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/book.svg) no-repeat;
+  width: 81px;
+  height: 66px;
+  position: absolute;
+  top: -90px;
+  left: 81px;
+}
+.info__title_africa {
+  position: relative;
+}
+.info__title_africa::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/africa.svg) no-repeat;
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  top: -101px;
+  left: 159px;
 }
 
 .info__text{
@@ -348,9 +389,95 @@ body {
     line-height: 22px;
   }
   .mission__block-numbers {
-    background: url(../images/diagram.png) no-repeat;
-    width: 616px ;
     height: 410px ;
+  }
+  .mission__row {
+    max-width: 222px;
+    margin-bottom: 60px;
+    line-height: 22px;
+  }
+  .mission__row:last-child{
+    margin-bottom: 0;
+  }
+  .mission__row_big-text {
+    font-size: 36px;
+    line-height: 44px;
+    padding-bottom: 10px;
+  }
+  .mission__row_green{
+    position: relative;
+  }
+  .mission__row_green::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: #97BC59;
+    position: absolute;
+    z-index: -1;
+    top: -7px;
+    left: -22px;
+  }
+  .mission__row_green::after {
+    content: "";
+    background: url(../images/line-green.svg);
+    display: inline-block;
+    width: 405px;
+    height: 59px;
+    position: absolute;
+    top: 10px;
+    left: 183px;
+  }
+  .mission__row_yellow {
+    position: relative;
+  }
+  .mission__row_yellow::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: #ECB942;
+    position: absolute;
+    z-index: -1;
+    top: -7px;
+    left: -22px;
+  }
+  .mission__row_yellow::after {
+    content: "";
+    background: url(../images/line-yellow.svg);
+    display: inline-block;
+    width: 405px;
+    height: 59px;
+    position: absolute;
+    top: 10px;
+    left: 183px;
+  }
+  .mission__row_blue {
+    position: relative;
+  }
+  .mission__row_blue::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: #B0CEF1;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: -22px;
+  }
+  .mission__row_blue::after {
+    content: "";
+    background: url(../images/line-blue.svg);
+    display: inline-block;
+    width: 405px;
+    height: 59px;
+    position: absolute;
+    top: 33px;
+    left: 183px;
   }
 
 
@@ -369,7 +496,10 @@ body {
   .partners__title {
     font-size: 48px;
     line-height: 59px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    /* position: absolute;
+    top: 1px;
+    left: 1px; */
 
   }
   .partners__block {
@@ -377,7 +507,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 70px;
-    position: relative;
+    position: absolute;
   }
   .partners__igm {
   }
@@ -392,8 +522,8 @@ body {
   height: 146px;
   position: absolute;
   z-index: -1;
-  top: -28px;
-  left: 600px;
+  top: -39px;
+  left: 527px;
   }
 
   /* ---section form----- */
@@ -450,6 +580,7 @@ body {
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
+    white-space: nowrap;
 
     padding: 18px 46px;
     border-radius: 8px;
@@ -458,6 +589,7 @@ body {
 
   /* ---footer----- */
   .footer {
+    padding-left: 50px;
   }
   .footer__contacts {
     display: flex;
@@ -466,6 +598,7 @@ body {
   }
   .footer__phone-block {
     text-align: center;
+    padding-right: 30px;
   }
   .footer__text {
     line-height: 22px;
@@ -476,6 +609,7 @@ body {
     line-height: 30px;
     padding-left: 30px;
     position: relative;
+    white-space: nowrap;
   }
   .footer__phone::before {
     content: "";
@@ -511,3 +645,205 @@ body {
   .footer__rights_rights {
     display: block;
   }
+
+
+  /* адптивность */
+@media(max-width: 1050px) {
+  .info__title {
+    font-size: 27px;
+    line-height: 16px;
+    padding-bottom: 25px;
+  }
+  .info__title_trees::before {
+    top: -100;
+    left: 80px;
+  }
+  .info__title_book::before {
+    left: 60px;
+    
+  }
+  .info__title_africa::before {
+    left: 100px;
+  }
+  .partners {
+    max-width: 800px;
+  }
+  .partners__title {
+    padding-left: 300px;
+  }
+  .form__img{
+    width: 700px;
+    height: 400px;
+  }
+  .form__inner {
+    padding-left: 250px;
+  }
+  .form__title {
+    max-width: 800px;
+   margin: auto;
+  }
+  .form::before {
+    display: none;
+  }
+}
+@media(max-width: 850px) {
+
+  .info__title {
+    font-size: 20px;
+    line-height: 12px;
+    padding-bottom: 15px
+  }
+  .info__title_trees::before {
+    top: -100;
+    left: 60px;
+  }
+  .info__title_book::before {
+    left: 40px;
+    
+  }
+  .info__title_africa::before {
+    left: 80px;
+  }
+  .info__text {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 250px
+  }
+
+
+  .work__inner {
+    /* flex-wrap: wrap-reverse; */
+  }
+  .work__img {
+    width: 456px;
+    height: 410px;
+  }
+  .work__title {
+    font-size: 33px;
+    line-height: 42px;
+    padding-bottom: 28px;
+  }
+  .work__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 18px;
+
+
+
+  .partners {
+    max-width: 800px;
+  }
+  .partners__title {
+    padding-left: 300px;
+  }
+  .form__img{
+    width: 700px;
+    height: 400px;
+  }
+  .form__inner {
+    padding-left: 250px;
+  }
+  .form__title {
+    max-width: 800px;
+   margin: auto;
+  }
+  .form::before {
+    display: none;
+  }
+}
+
+@media(max-width: 400px) {
+  body {
+    background: url(../images/main.png) no-repeat 50% 40%;
+    background-size: 140%;
+  }
+  .headline__title {
+  font-size: 36px;
+  line-height: 43px;
+  padding: 385px 0 15px;
+  }
+  .headline__text {
+    line-height: 18px;
+    max-width: 300px;
+    padding-bottom: 25px;
+}
+.headline_btn__icon {
+  display: none;
+}
+.headline__title::before {
+  top: 392px;
+}
+.headline__count {
+  position: relative;
+  top: -395px;
+  left: -94px;
+}
+.header {
+  
+}
+.info__list {
+  flex-wrap: wrap;
+}
+.info__text {
+  padding-bottom: 120px;
+}
+.work__inner {
+  flex-wrap: wrap-reverse;
+}
+.mission{
+  flex-wrap: wrap;
+}
+.mission__title {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 11px;
+}
+.mission__text {
+  line-height: 22px;
+  text-align: center;
+  width: 330px;
+  padding-bottom: 50px;
+}
+.mission__text {
+  line-height: 22px;
+  text-align: center;
+  width: 330px;
+}
+.mission__text {
+  line-height: 22px;
+  text-align: center;
+  width: 330px;
+}
+.partners__title {
+  font-size: 36px;
+  line-height: 43px;
+  padding-bottom: 40px;
+  white-space: nowrap;
+  padding-left: 230px;
+}
+.form__title {
+  font-size: 32px;
+  line-height: 39px;
+}
+.form__text {
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 76px;
+  width: 350px;
+}
+.form__button {
+  margin-left: 100px;
+}
+.footer__phone {
+  
+}
+.footer__text {
+  text-align: left;
+  width: 250px;
+}
+.footer__phone-block{
+  padding-right: 30px;
+}
+}
