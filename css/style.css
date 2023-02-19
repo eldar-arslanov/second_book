@@ -360,6 +360,7 @@ body {
   .mission {
     padding: 0 50px 70px;
     display: flex;
+    flex-wrap: wrap;
   }
   .mission__block-text {
     max-width: 485px;
@@ -387,6 +388,7 @@ body {
   }
   .mission__text {
     line-height: 22px;
+    padding-bottom: 50px;
   }
   .mission__block-numbers {
     height: 410px ;
@@ -421,7 +423,7 @@ body {
   }
   .mission__row_green::after {
     content: "";
-    background: url(../images/line-green.svg);
+    background: url(../images/line-green.svg) no-repeat;
     display: inline-block;
     width: 405px;
     height: 59px;
@@ -466,8 +468,8 @@ body {
     background-color: #B0CEF1;
     position: absolute;
     z-index: -1;
-    top: 10px;
-    left: -22px;
+    top: -2px;
+    left: -17px;
   }
   .mission__row_blue::after {
     content: "";
@@ -483,7 +485,7 @@ body {
 
   /* ---partners-block starting----- */
   .partners {
-    padding-bottom: 200px;
+    padding-bottom: 140px;
     text-align: center;
   }
   .line {
@@ -528,8 +530,10 @@ body {
 
   /* ---section form----- */
   .form {
+    background: url(../images/form-img.png) no-repeat;
     position: relative;
-    padding-bottom: 190px;
+    padding-bottom: 0 190px;
+    margin-top: 80px;
   }
   .form::before {
     content: "";
@@ -544,17 +548,13 @@ body {
     
     
   }
-  .form__img {
-    position: absolute;
-    z-index: -1;
-    top: -29px;
-    left: 21px;
-  }
+  
   .form__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
     
   }
   .form__title{
@@ -669,14 +669,13 @@ body {
     max-width: 800px;
   }
   .partners__title {
-    padding-left: 300px;
+    padding-left: calc(50% - 96px);
   }
-  .form__img{
-    width: 700px;
-    height: 400px;
+
+  .form__text {
+    font-size: calc(110% - 1px);
   }
   .form__inner {
-    padding-left: 250px;
   }
   .form__title {
     max-width: 800px;
@@ -729,28 +728,60 @@ body {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 18px;
+  }
 
+  .mission__title::before {
+    display: none;
+   }
 
 
   .partners {
     max-width: 800px;
   }
   .partners__title {
-    padding-left: 300px;
+    font-size: 39px;
+    line-height: 45px;
   }
-  .form__img{
-    width: 700px;
-    height: 400px;
+  .partners__block {
+    flex-wrap: wrap;
+    padding-left: 100px;
+    gap: 50px;
   }
+  .partners__img {
+    width: calc(30% - 1px);
+  }
+  .partners__block:before {
+    display: none;
+  }
+  .partners__title {
+    padding-bottom: 40px;
+  }
+  
   .form__inner {
-    padding-left: 250px;
   }
   .form__title {
     max-width: 800px;
    margin: auto;
+   font-size: 34px;
+   line-height: 47px;
   }
   .form::before {
     display: none;
+  }
+}
+
+@media(max-width:630px) {
+
+   .mission__title::before {
+    display: none;
+   }
+
+   .form__title {
+    font-size: 24px;
+    line-height: 32px;
+   }
+   .form__text {
+    line-height: calc(140% - 1px);
   }
 }
 
@@ -836,6 +867,7 @@ body {
 .form__button {
   margin-left: 100px;
 }
+
 .footer__phone {
   
 }
